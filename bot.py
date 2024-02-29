@@ -223,13 +223,16 @@ def callback_query(call):
 def help(message):
     bot.send_message(message.chat.id, f'Вот список команд бота:\n/expertlist\n/news\n/site\n/website\n')
 
+
 #ОПРОСЫ
+
 
 def get_question_by_order(order):
     cur = conn.cursor()
     cur.execute("SELECT questions FROM anketa_questions WHERE id = %s", (order,))
     question_data = cur.fetchone()
     return question_data[0]
+
 
 def get_options_by_question_id(question_id):
     cur = conn.cursor()
@@ -241,23 +244,27 @@ def get_options_by_question_id(question_id):
 
 @bot.message_handler(commands=['anketa'])
 def anketa(message):
-    current_question_id = 1
-    question = get_question_by_order(current_question_id)
-    options = get_options_by_question_id(current_question_id)
+    global current_question_order
+    current_question_order = 1
+    question=get_question_by_order(current_question_order)
+    options=get_options_by_question_id(current_question_order)
 
     bot.send_poll(message.chat.id, question, options=options)
 
 
-@bot.message_handler(content_types=['poll'])
+
+@bot.poll_handler(func=lambda poll: True)
 def handle_poll(poll):
-    question_id=poll.poll.question.split()[0]
-    current_question_order=int(question_id) + 1
+    chat_id = poll.chat_id
+    bot.send_message(chat_id, "Зашел в блок")
+    current_question_order += 1
+    bot.send_message(chat_id, f"Счетчик вопроса{current_question_order}")
     if current_question_order <= 3:
-        question=get_question_by_order(current_question_order)
-        options=get_options_by_question_id(current_question_order)
-        bot.send_poll(poll.message.chat.id, question, options=options)
+        question = get_question_by_order(current_question_order)
+        options = get_options_by_question_id(current_question_order)
+        bot.send_poll(chat_id, question, options=options)
     else:
-        bot.send_message(poll.message.chat.id, "Спасибо за участие!")
+        bot.send_message(chat_id, "Спасибо за участие!")
 
 
 
