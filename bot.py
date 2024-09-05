@@ -730,7 +730,7 @@ async def func_message(message: Message):
         back_button_state='investment_experts_menu_state'
         buttons=types.ReplyKeyboardMarkup(resize_keyboard=True, keyboard=[
             [KeyboardButton(text='Назад')]])
-        await message.answer_photo(photo='https://disk.yandex.ru/i/Q6CiwnZ3AelntQ')
+        await message.answer_photo(photo='https://disk.yandex.ru/i/Fv_sY7gAG9_jwg')
         await message.answer(f'<strong>Глеб Садыков.</strong>'
                              f'\n• Эксперт, ментор акселерации TomsHUB 2021, руководитель акселератора UNIVERSITY УМНИК, руковаодитель акселерационной программы ТУСУР'
                              f'\n• Экспертная деятельность продолжается на протяжении 3-х лет, имеются подтверждающие документы. Принял участие в 10-ти программах акселерации.'
@@ -776,7 +776,7 @@ async def func_message(message: Message):
         back_button_state='custdev_experts_menu_state'
         buttons=types.ReplyKeyboardMarkup(resize_keyboard=True, keyboard=[
             [KeyboardButton(text='Назад')]])
-        await message.answer_photo(photo='https://disk.yandex.ru/i/J0GIDUk-cjk93Q')
+        await message.answer_photo(photo='https://disk.yandex.ru/i/Txsgn3I0EWC_Rg')
         await message.answer(f'<strong>Смирнов Александр Олегович</strong>'
                              f'\n• Имеет 6-ти летний опыт работы'
                              f'\n• Участие в акселерационных программах в разных ролях '
@@ -818,7 +818,7 @@ async def func_message(message: Message):
         buttons=types.ReplyKeyboardMarkup(resize_keyboard=True, keyboard=[
             [KeyboardButton(text='Назад')]
         ])
-        await message.answer_photo(photo='https://disk.yandex.ru/i/EJ2Vzs7FcPYEYg')
+        await message.answer_photo(photo='https://disk.yandex.ru/i/aE8vmXGiYQIK9A')
         await message.answer(f'<strong>Виктор Горбачев</strong>'
                              f'\n• Имеет 4-х летний опыт в области запуска новых продуктов и выявлении точек роста работающих'
                              f'\n• Участвовал в следующих проектах: Menu.money в качестве CEO, ВкусВилл - трекинг продуктовых команд, Heritage, Correcto.oniline,'
@@ -831,7 +831,7 @@ async def func_message(message: Message):
         buttons=types.ReplyKeyboardMarkup(resize_keyboard=True, keyboard=[
             [KeyboardButton(text='Назад')]
         ])
-        await message.answer_photo(photo='https://disk.yandex.ru/i/xv9joy8bEX6f6A')
+        await message.answer_photo(photo='https://disk.yandex.ru/i/K9T8WweA0JeDeg')
         await message.answer(f'<strong>Лихачев Василий Николаевич</strong>'
                              f'\n• Имеет 15-ти летний опыт работы'
                              f'\n• Корпоративный трекер: ВкусВилл, Sravni, Агама'
@@ -844,7 +844,7 @@ async def func_message(message: Message):
         back_button_state='legal_experts_menu_state'
         buttons=types.ReplyKeyboardMarkup(resize_keyboard=True, keyboard=[
             [KeyboardButton(text='Назад')]])
-        await message.answer_photo(photo='https://disk.yandex.ru/i/PEQn8ffAmRHXfA')
+        await message.answer_photo(photo='https://disk.yandex.ru/i/bfgeeUabUwWG8Q')
         await message.answer(f'<strong>Галина Волкова.</strong>'
                              f'\n•С 1993 по 2004 год являлась бухгалтером Беловского строительного управления,  в последствии работала главным бухгалтером и юристом-консультантом. В настоящее время занимает должность директора компании "ООО ЦБУ «Баланс – Т"»'
                              f'\n• Проекты, в которых эксперт принимает участие: Проведение лекций, консультаций «Создание и сопровождение юридического лица» в качестве эксперта в Проектах «Стартап – Полигон II», «Стартап – Полигон III».'
@@ -870,7 +870,7 @@ async def func_message(message: Message):
         buttons=types.ReplyKeyboardMarkup(resize_keyboard=True, keyboard=[
             [KeyboardButton(text='Назад')]
         ])
-        await message.answer_photo(photo='https://disk.yandex.ru/i/zevsJ0u_l71uAg')
+        await message.answer_photo(photo='https://https://disk.yandex.ru/i/rFN1j_JBi5KRcw')
         await message.answer(f'<strong>Иван Тикшаев</strong>'
                              f'\n• Генеральный директор компании DevInside, основатели и руководитель сатртап проекта TenderChad.'
                              f'\n Участник кластера Smart Technologies Tomsk, резидент СБИ "Дружба", преподаватель кафедры АОИ ТУСУР,'
